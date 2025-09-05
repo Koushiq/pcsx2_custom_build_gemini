@@ -1,0 +1,34 @@
+1. Features will be provided in a folder called `tasks` in `.txt` file format. I will read a file from the `tasks` folder and then plan and develop the feature.
+
+2. Respect the original codebase, follow standard coding practice for C++. Do not refactor code as you wish.
+
+3. Follow best development principles of C++ and pcsx2, check `codebase_explanation.md` file for reference
+
+4. If any changes in the branch are not aligned with best C++ coding practice, then I will alert you.
+
+5. for git log check use `git log --oneline`
+
+6. for git remote add origin use `git remote add origin ORIGIN_URL_HERE` 
+
+7. for git add all files to stage `git add .`
+
+8 for gitr add selected files to stage `git add filename1, filename2 ... `
+
+9. commit message will follow prefix `git commit -m "feature/pp-xxxxx actual_message_here" ` here feature is selected if changes are for new feature , xxxx is the task number
+
+10. commit message will follow prefix `git commit -m "fix/pp-xxxxx actual_message_here` here fix is selected if changes are for new fix , xxxx is the task number
+
+11. commit feature changes to specific branch
+
+12. branch creation command `git branch branch_name`
+
+13. branch checkout command `git checkout branch_name`
+
+14. branch git branch pull before editing files "git pull origin branch_name" 
+
+15. always checkout to feature/fix branch before eiditing anyfiles and doing task
+
+16. push to remote "git push origin branch_name"
+
+17. checkout to new branch and keep upto date with master before doing work
+

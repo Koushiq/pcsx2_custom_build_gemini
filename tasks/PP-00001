@@ -1,0 +1,8 @@
+1. Create actions pipeline which will only trigger when creating a Merge request
+
+2. Create actions pipeline which will trigger when pushing to a branch, but it will only check code build
+
+2. pipeline will build entire project to ensure no build issue 
+
+3. pipeline will run test project to ensure project intrigretty
+
