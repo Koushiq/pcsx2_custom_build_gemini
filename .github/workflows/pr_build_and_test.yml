@@ -1,0 +1,30 @@
+name: PR Build and Test
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake build-essential libsdl2-dev
+
+    - name: Configure CMake
+      run: cmake -B build
+
+    - name: Build project
+      run: cmake --build build -j$(nproc)
+
+    - name: Run tests
+      run: |
+        cd build
+        ctest --output-on-failure
